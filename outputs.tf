@@ -3,8 +3,12 @@ output "vault_token" {
   sensitive = true
 }
 
-output "vault_address" {
-  value = hcp_vault_cluster.example.public_endpoint
+output "vault_private_url" {
+  value = hcp_vault_cluster.example.vault_private_endpoint_url
+}
+
+output "vault_public_url" {
+  value = hcp_vault_cluster.example.vault_public_endpoint_url
 }
 
 output "vault_namespace" {
