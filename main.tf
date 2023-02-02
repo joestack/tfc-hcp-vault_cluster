@@ -1,6 +1,6 @@
 provider "hcp" {
-    client_id     = var.client_id
-    client_secret = var.client_secret
+  client_id     = var.client_id
+  client_secret = var.client_secret
 }
 
 resource "hcp_hvn" "example_hvn" {
